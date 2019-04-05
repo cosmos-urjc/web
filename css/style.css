@@ -1,0 +1,265 @@
+:root {
+	--main-color: #181c1f;/*#181c1f*/
+	--text-header-color: #eee;/*#ddd*/
+	--active-header-color: #fff;/*#fff*/
+
+	--link-color: #248;/*#eef*/
+	--link-hover-color: #248;/*#bbc*/
+
+	--text-color: black;
+
+	/*Light version*/
+	/*--main-color: #fff;
+	--text-header-color: #333;
+	--active-header-color: #000;
+
+	--link-color: #002;
+	--link-hover-color: #559;
+
+	--text-color: #000;*/
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #bbb;
+	border-radius: 50px;
+	border-left: solid 1px #eee;
+	border-right: solid 1px #eee;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #888;
+
+}
+
+* {
+	box-sizing: border-box;
+}
+html {
+	background: url('../images/bg2.jpg') no-repeat center fixed;
+	background-size: cover;
+}
+html, body {
+	margin: 0;
+}
+body {
+	/*min-height 100vh (not 100%. Would be of the html)
+	 to keep the footer down when there isn't content. But 
+	 a padding at the bottom, below the footer, so that it 
+	 doesn't overlap the content. It would do that because
+	 it's position is absolute, so that the bottom property
+	 works. The bottom property works relative to the nearest
+	 parent element that hasn't static positioning, so the 
+	 body has relative position.*/
+	min-height: 100vh;
+	padding-bottom: 140px;/*Space for the footer*/
+	position: relative;
+
+	background: #fff4;
+	font-family: 'Open Sans', Roboto, Helvetica, sans-serif;
+	color: var(--text-color);
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 56px;
+	z-index: 10;
+
+	font-size: 15px;
+	line-height: 24px;
+
+	display: flex;
+	overflow: visible;
+	background: var(--main-color);
+	box-shadow: 0px 1px 8px 0px #0009;
+}
+header nav, header ul, header li, header a {
+	display: flex;
+}
+header nav {
+	width: 100%;
+	justify-content: space-between;
+	padding: 0px 8px;
+}
+
+header ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	padding: 16px 0;
+	margin: 0;
+	height: 56px;
+}
+
+header a {
+	align-items: center;
+	margin: 0 8px;
+
+	color: var(--text-header-color);
+	text-decoration: none;
+}
+
+header a:hover {
+	color: var(--active-header-color);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+header a.active {
+	color: var(--active-header-color);
+	font-weight: bold;
+	border-bottom: solid 2px;
+}
+
+header img {
+	height: 40px;
+}
+
+#m1 {
+	padding: 72px 16px 16px 16px;
+	justify-content: center;
+}
+
+#m2 {
+	background: white;
+	height: 800px;
+}
+#m3 {
+	background: url('../images/bg1.jpg') no-repeat center fixed;
+	background-size: cover;
+	height: 400px;
+
+}
+#m4 {
+	background: white;
+	height: 400px;
+}
+.m h1, .m p {
+	text-align: center;
+}
+
+a {
+	color: var(--link-color);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--link-hover-color);
+	text-decoration: underline;
+}
+
+.twitter {
+	padding: 16px 8px;
+	width: 50%;
+	max-width: 512px;
+	display: flex;
+}
+.twitter iframe {
+	box-shadow: 4px 8px 32px -8px #0008;
+}
+
+
+.simple-list {
+	list-style: none;
+	padding: 16px;
+}
+
+footer, .footer-left, .footer-middle, .footer-right {
+	display: flex;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	justify-content: space-between;
+	align-content: space-around;
+	padding: 0px 16px;
+
+	background-color: var(--main-color);
+	text-align: center;
+	color: white;
+}
+.footer-left {
+	flex-flow: row wrap;
+}
+
+.footer-middle {
+	padding: 16px;
+}
+
+.footer-middle img {
+	height: 100px;
+	border-radius: 1000px;
+	box-shadow: 4px 8px 20px 0px #0008;
+}
+
+.footer-right {
+	padding: 16px;
+	flex-flow: column wrap;
+}
+.footer-right div {
+	display: flex;
+	justify-content: center;
+}
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+footer ul {
+	list-style: none;
+	font-size: small;
+	padding: 16px;
+}
+
+ion-icon {
+	font-size: 24px;
+	margin: 8px;
+}
+
+
+@media screen and (max-width: 600px) {
+	body {
+		margin-bottom: 56px;
+	}
+
+	header {
+		top: auto;
+		bottom: 0;
+		height: 80px;
+		align-content: space-between;
+
+		box-shadow: 0px -1px 8px #0008;/*Para que acabe pronto sin ser muy oscura*/
+		line-height: 16px;
+	}
+	#main {
+		padding: 16px 16px 72px 16px;
+	}
+	.header-left {
+		width: 40%;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	header img {
+		display: none;
+	}
+
+	.footer-middle {
+		align-self: center;
+	}
+	.footer-middle img {
+	height: 56px;
+	}
+}
