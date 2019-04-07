@@ -1,23 +1,12 @@
 :root {
-	--main-color: #181c1f;/*#181c1f*/
 	--text-header-color: #eee;/*#ddd*/
-	--active-header-color: #fff;/*#fff*/
 
 	--link-color: #248;/*#eef*/
 	--link-hover-color: #248;/*#bbc*/
 
 	--text-color: black;
-
-	/*Light version*/
-	/*--main-color: #fff;
-	--text-header-color: #333;
-	--active-header-color: #000;
-
-	--link-color: #002;
-	--link-hover-color: #559;
-
-	--text-color: #000;*/
 }
+
 
 ::-webkit-scrollbar {
 	width: 10px;
@@ -42,10 +31,6 @@
 * {
 	box-sizing: border-box;
 }
-html {
-	background: url('../images/bg2.jpg') no-repeat center fixed;
-	background-size: cover;
-}
 html, body {
 	margin: 0;
 }
@@ -62,7 +47,7 @@ body {
 	padding-bottom: 140px;/*Space for the footer*/
 	position: relative;
 
-	background: #fff4;
+	background: #fff;
 	font-family: 'Open Sans', Roboto, Helvetica, sans-serif;
 	color: var(--text-color);
 }
@@ -79,8 +64,8 @@ header {
 
 	display: flex;
 	overflow: visible;
-	background: var(--main-color);
-	box-shadow: 0px 1px 8px 0px #0009;
+	background: #111b;
+	box-shadow: 0px 1px 8px 0px #0008;
 }
 header nav, header ul, header li, header a {
 	display: flex;
@@ -88,9 +73,9 @@ header nav, header ul, header li, header a {
 header nav {
 	width: 100%;
 	justify-content: space-between;
+	flex-flow: row wrap;
 	padding: 0px 8px;
 }
-
 header ul {
 	display: flex;
 	align-items: center;
@@ -99,73 +84,130 @@ header ul {
 	margin: 0;
 	height: 56px;
 }
-
 header a {
 	align-items: center;
-	margin: 0 8px;
+	margin: 0 8px;/*Not padding because of the border-bottom*/
 
 	color: var(--text-header-color);
 	text-decoration: none;
 }
-
 header a:hover {
-	color: var(--active-header-color);
+	color: #fff;
 	font-weight: bold;
 	text-decoration: none;
 }
-
 header a.active {
-	color: var(--active-header-color);
+	color: #fff;
 	font-weight: bold;
 	border-bottom: solid 2px;
 }
-
 header img {
 	height: 40px;
 }
 
-#m1 {
-	padding: 72px 16px 16px 16px;
+.dropdown {
+	padding: 16px 0;
+	display: none;/*!!!!*/
+}
+.dropdown-content {
+	display: none;
+	position: fixed;
+	top: 56px;
+	height: auto;/*Why I need this?*/
+
+	border-radius: 0 0 8px 8px;
+	background: #111b;
+	box-shadow: 0px 1px 8px 0px #0008;
+}
+.dropdown:hover .dropdown-content {
+	display: flex;
+	flex-flow: column;
+}
+
+
+.m {
+	display: flex;
 	justify-content: center;
+}
+.m h1, .m h2, .m h3, .m h4, .m h5, .m p {
+	text-align: center;
+}
+#m1 {
+	padding: 80px 16px 50px 16px;
+	flex-flow: column;
+
+	background: url('../images/bg1.jpg') no-repeat center fixed;
+	background-size: cover;
+	color: white;
+	text-shadow: 1px 1px 2px black;
+}
+#m1 p {
+	width: 90%;
+	max-width: 1000px;
+	margin: 16px auto;
+}
+#m1 a {
+	color: #51b0ff;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px #000;
+}
+#m1 a:hover {
+	text-decoration: underline;
+	color: #3b82bf;
 }
 
 #m2 {
-	background: white;
-	height: 800px;
-}
-#m3 {
+	padding: 0;
 	background: url('../images/bg1.jpg') no-repeat center fixed;
 	background-size: cover;
-	height: 400px;
+	height: 256px;
+	display: flex;
+	justify-content: space-around;
+}
+#im1 {
+	width: 50%;
+	background: url("../images/im1.jpg") no-repeat center;
+	background-size: cover;
+}
+#im2 {
+	width: 50%;
+	background: url("../images/im2.jpg") no-repeat center;
+	background-size: cover;
 
+}
+#m3 {
+	padding: 32px 16px;
+	flex-flow: row wrap;
+	background: white;
+	justify-content: space-around;
 }
 #m4 {
+	padding: 32px 16px;
 	background: white;
-	height: 400px;
 }
-.m h1, .m p {
-	text-align: center;
+.twitter * {
+	box-shadow: 2px 4px 8px 0px #0004;
+	border-radius: 4px;
+	max-width: 800px;
+	max-height: 600px;
 }
-
-a {
-	color: var(--link-color);
+#m5 {
+	padding: 32px 32px 64px 32px;
+}
+.enroll {
+	padding: 16px;
+	border-radius: 1000px;
+	background: linear-gradient(140deg,#198cff,#00080f);
 	text-decoration: none;
+	color: white;
+	box-shadow: 3px 4px 8px 0px #0008;
+}
+.enroll:hover {
+	color: #eee;
+	box-shadow: inset 3px 4px 8px 0px #0008;
 }
 
-a:hover {
-	color: var(--link-hover-color);
-	text-decoration: underline;
-}
 
-.twitter {
-	padding: 16px 8px;
-	width: 50%;
-	max-width: 512px;
-	display: flex;
-}
-.twitter iframe {
-	box-shadow: 4px 8px 32px -8px #0008;
-}
 
 
 .simple-list {
@@ -186,7 +228,7 @@ footer {
 	align-content: space-around;
 	padding: 0px 16px;
 
-	background-color: var(--main-color);
+	background-color: #111;
 	text-align: center;
 	color: white;
 }
@@ -260,6 +302,6 @@ ion-icon {
 		align-self: center;
 	}
 	.footer-middle img {
-	height: 56px;
+		height: 56px;
 	}
 }
