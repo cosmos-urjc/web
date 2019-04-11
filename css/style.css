@@ -173,6 +173,7 @@ header img {
 	width: 50%;
 	background: url("../images/im2.jpg") no-repeat center;
 	background-size: cover;
+
 }
 #m3 {
 	padding: 32px 16px;
@@ -184,13 +185,11 @@ header img {
 	padding: 32px 16px;
 	background: white;
 }
-.twitter {
-	max-width: 600px;
-	max-height: 600px;
-}
 .twitter * {
 	box-shadow: 2px 4px 8px 0px #0004;
 	border-radius: 4px;
+	max-width: 800px;
+	max-height: 600px;
 }
 #m5 {
 	padding: 32px 32px 64px 32px;
