@@ -186,6 +186,11 @@ header img {
 	padding: 32px 16px;
 	background: white;
 }
+ul {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+}
 .twitter * {
 	box-shadow: 2px 4px 8px 0px #0004;
 	border-radius: 4px;
