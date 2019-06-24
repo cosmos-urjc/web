@@ -1,6 +1,6 @@
 :root {
 	--text-header-color: #eee;/*#ddd*/
-
+	--bkg-color: #111;
 	--link-color: #248;/*#eef*/
 	--link-hover-color: #248;/*#bbc*/
 
@@ -59,12 +59,12 @@ header {
 	height: 56px;
 	z-index: 10;
 
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 24px;
 
 	display: flex;
 	overflow: visible;
-	background: #111b;
+	background: #0a0a0ac0;
 	box-shadow: 0px 1px 8px 0px #0008;
 }
 header nav, header ul, header li, header a {
@@ -80,34 +80,62 @@ header ul {
 	display: flex;
 	align-items: center;
 	list-style: none;
-	padding: 16px 0;
+	padding: 0;
 	margin: 0;
 	height: 56px;
 }
 header a {
 	align-items: center;
-	margin: 0 8px;/*Not padding because of the border-bottom*/
-
+	padding: 12px 4px;
 	color: var(--text-header-color);
 	text-decoration: none;
+	border: solid 4px transparent;
+	transition: border .1s ease-out;
 }
 header a:hover {
 	color: #fff;
-	font-weight: bold;
-	text-decoration: none;
+	border-bottom: solid 4px #eee;
 }
-header a.active {
-	color: #fff;
-	font-weight: bold;
-	border-bottom: solid 2px;
+.active {
+	/*color: #fff;*/
+	border: solid 4px transparent;
+	border-bottom: solid 4px #cccc;
 }
 header img {
 	height: 40px;
+	width: 40px;
 }
+/****COSMOS LOGO****/
+#icon {
+	/*Remove the border at the bottom to this <a> element*/
+	border: none;
+	padding-right: 8px;
+}
+#icon-image {
+	/*Leave place for the border of the image*/
+	border: solid 2px transparent;
+	border-radius: 999px;
+	transition: border .1s ease-out;
+}
+#active-icon-image {
+	border: solid 2px #cccc;
+	border-radius: 999px;
+	transition: border .1s ease-out;
+}
+#icon:hover #icon-image{
+	border: solid 2px white;
+	border-radius: 999px;
+}
+#icon:hover #active-icon-image{
+	border: solid 2px white;
+	border-radius: 999px;
+}
+
+
 
 .dropdown {
 	padding: 16px 0;
-	display: none;/*!!!!*/
+	display: none;
 }
 .dropdown-content {
 	display: none;
@@ -116,7 +144,7 @@ header img {
 	height: auto;/*Why I need this?*/
 
 	border-radius: 0 0 8px 4px;
-	background: #111b;
+	background: var(--bkg-color);
 	box-shadow: 0px 1px 8px 0px #0008;
 }
 .dropdown:hover .dropdown-content {
@@ -176,24 +204,22 @@ header img {
 
 }
 #m3 {
-	display: flex;
 	padding: 32px 16px;
 	flex-flow: column wrap;
 	background: white;
+	justify-content: center;
+}
+#m3 div {
+	display: flex;
 	justify-content: center;
 }
 #m4 {
 	padding: 32px 16px;
 	background: white;
 }
-ul {
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
-}
 .twitter * {
 	box-shadow: 2px 4px 8px 0px #0004;
-	border-radius: 4px;
+	border-radius: 8px;
 	max-width: 800px;
 	max-height: 600px;
 }
@@ -234,7 +260,7 @@ footer {
 	align-content: space-around;
 	padding: 0px 16px;
 
-	background-color: #111;
+	background-color: var(--bkg-color);
 	text-align: center;
 	color: white;
 }
