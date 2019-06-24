@@ -176,10 +176,11 @@ header img {
 
 }
 #m3 {
+	display: flex;
 	padding: 32px 16px;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 	background: white;
-	justify-content: space-around;
+	justify-content: center;
 }
 #m4 {
 	padding: 32px 16px;
