@@ -14,7 +14,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cosmos</title>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'><!-- Font -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" type="image" href="images/favicon.ico">
 
@@ -32,7 +32,10 @@
 					<a href="education.html">Educación</a>
 				</li>
 				<li>
-					<a href="construction.html">Construcción</a>
+					<a href="rockets.html">Cohetes</a>
+				</li>
+				<li>
+					<a href="aeromodelling.html">Aeromodelismo</a>
 				</li>
 				<li>
 					<a href="research.html">Investigación</a>
@@ -68,10 +71,13 @@
 				<li>
 					<a href="contact.html">Contacto</a>
 				</li>
+				<li>
+					<a href="login.html">Iniciar sesión</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
-	<div id='m1' class="m">
+	<div class="first-section dark-section">
 		<h1>COSMOS</h1>
 		<p>	
 			COSMOS es una iniciativa de alumnos de ingeniería aeroespacial en la Universidad Rey Juan Carlos, y tiene como fin el apoyar y organizar proyectos e iniciativas aeroespaciales.
@@ -80,55 +86,60 @@
 			Buscando la divulgación científica celebra charlas, eventos, y talleres. También desarrolla proyectos de investigación y construcción de vehículos aeroespaciales, e intenta integrar un aprecio por la cultura y la astronomía dentro de la ingeniería.
 		</p>
 	</div>
-	<div id="m2" class="m">
-		<div id="im1"></div>
-		<div id="im2"></div>
+	<div id="index-image-section">
+		<div style="width: 50%; background: url('images/im1.jpg') no-repeat center; background-size: cover;"></div>
+		<div style="width: 50%; background: url('images/im2.jpg') no-repeat center; background-size: cover;"></div>
 	</div>
-	<div id="m3" class="m">
+	<div class="section">
 		<h1>Próximas actividades</h1>
 		<div>
 			<ul>
-			<li>Ala volante</li>
-			<li>Cohetes de agua</li>
-			<li>...</li>
-		</ul>
+				<li>Flying Wing</li>
+				<li>Cohetes de agua</li>
+			</ul>
 		</div>
 	</div>
-	<div id="m4" class="m">
+	<div class="section">
 		<!-- Twitter embedded -->
 		<div class="twitter">
 			<a class="twitter-timeline" data-width="40vw" data-height="60vh" data-theme="light" href="https://twitter.com/cosmos_urjc?ref_src=twsrc%5Etfw">Tweets by cosmos_urjc</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
 	</div>
-	<div id="m5" class="m">
-		<a class="enroll" href="https://docs.google.com/forms/d/e/1FAIpQLSfXzTB64BxPZH1JsvJAMgx3bZwNBC5UngCPu6MTcT5tfQQX1A/viewform">Inscríbete</a>
+	<div class="section">
+		<div>
+			<a id="enroll-button" href="https://docs.google.com/forms/d/e/1FAIpQLSfXzTB64BxPZH1JsvJAMgx3bZwNBC5UngCPu6MTcT5tfQQX1A/viewform">Inscríbete</a>
+		</div>
 	</div>
 	<footer>
 		<div class="footer-left">
 			<ul style="display: inline-block; float: left;">
-				<li><a href="https://docs.google.com/document/d/1JCsOie2zNQspg8h-rVtuWD5g4GTfu7inIbeGcyhlrrk/edit?usp=sharing" target="_blank">Qué aprender</a></li>
-				<li><a href="entities.html">Entidades colaboradoras</a></li>
-				<li><a href="cookies.html">Cookies</a></li>
-				
+				<li>
+					<a href="https://docs.google.com/document/d/1JCsOie2zNQspg8h-rVtuWD5g4GTfu7inIbeGcyhlrrk/edit?usp=sharing" target="_blank">Qué aprender</a>
+				</li>
+				<li>
+					<a href="entities.html">Entidades colaboradoras</a>
+				</li>
 			</ul>
 			<ul style="display: inline-block; float: right;">
-				<li><a href="info.html">Info</a></li>
-				<li><a href="contact.html">Contacto</a></li>
+				<li><a href="cookies.html">Cookies</a></li>
 				<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXzTB64BxPZH1JsvJAMgx3bZwNBC5UngCPu6MTcT5tfQQX1A/viewform">Inscríbete</a></li>
 			</ul>
 		</div>
 		<div class="footer-middle">
-			<a href="index.html"><img src="images/logo.jpg" /></a>
+			<a href="index.html"></a>
+			<img src="images/logo.jpg">
 		</div>
 		<div class="footer-right">
-			<p>Síguenos</p>
-			<div>
-				<a href="https://twitter.com/cosmos_urjc" target="_blank">
-					<ion-icon name="logo-twitter"></ion-icon>
-				</a>
-				<a href="https://www.instagram.com/cosmos_urjc/" target="_blank">
-					<ion-icon name="logo-instagram"></ion-icon>
-				</a>
+			<div id="follow-us-div">
+				<div id="follow-us">Síguenos</div>
+				<div>
+					<a href="https://twitter.com/cosmos_urjc" target="_blank">
+						<ion-icon name="logo-twitter"></ion-icon>
+					</a>
+					<a href="https://www.instagram.com/cosmos_urjc/" target="_blank">
+						<ion-icon name="logo-instagram"></ion-icon>
+					</a>
+				</div>
 			</div>
 		</div>
 	</footer>
