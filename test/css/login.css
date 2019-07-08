@@ -1,0 +1,123 @@
+#log-div {
+	display: flex;
+	justify-content: center;
+}
+#login-div {
+	width: 40%;
+	padding: 32px;
+	background: #f4f7f9;
+	box-shadow: 2px 2px 8px 0px #0008;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	min-width: 320px;
+	max-width: 450px;
+}
+#login-div h2 {
+	margin: 0 0 16px;
+}
+#social-btn-div {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+#google-btn {
+	color: #e60600;
+	background: transparent;
+	border: 1px solid #e60600;
+	border-radius: 6px;
+	transition: color .1s, background .1s;
+	padding: 8px;
+	margin: 2px;
+
+	display: flex;
+	align-items: center;
+
+}
+#google-btn:hover {
+	background: #d42420;
+	color: white;
+}
+/*#twitter-btn {
+	color: #0088bb;
+	background: transparent;
+	border: 1px solid #0088bb;
+	border-radius: 6px;
+	transition: color .1s, background .1s;
+	padding: 8px;
+	margin: 2px;
+
+	display: flex;
+	align-items: center;
+}
+#twitter-btn:hover {
+	background: #0088bb;
+	color: white;
+}*/
+.separator {
+	margin: 16px 0;
+	height: 0;
+	border-top: 1px solid #ccc;
+}
+#manual-log-div {
+	display: flex;
+	flex-flow: column;
+
+}
+#inputs {
+	margin-bottom: 8px;
+}
+.input-group {
+	display: flex;
+	justify-content: center;
+	padding: 8px;
+}
+#email-input, #pwd-input {
+	background: white;
+	padding: 8px;
+	margin-left: 8px;
+	border: none;
+	box-shadow: inset 0 0 4px 0 #0004;
+	border-radius: 6px;
+}
+#btns {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	padding: 8px;
+}
+#login-btn, #register-btn, #forgotten-btn {
+	background: transparent;
+	border-radius: 6px;
+	padding: 12px;
+	margin: 2px;
+	transition: color .1s, background .1s;
+	
+}
+#login-btn {
+	color: #d42420;
+	border: 1px solid #d42420;
+	
+}
+#register-btn {
+	color: #0088bb;
+	border: 1px solid #0088bb;
+	
+}
+#forgotten-btn {
+	color: #683838;
+	border: 1px solid #683838;
+	
+}
+#login-btn:hover {
+	color: white;
+	background: #d42420;
+}
+#register-btn:hover {
+	color: white;
+	background: #0088bb;
+}
+#forgotten-btn:hover {
+	color: white;
+	background: #683838;
+}
