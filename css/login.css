@@ -3,7 +3,7 @@
 	justify-content: center;
 }
 #login-div {
-	width: 40%;
+	width: 45%;
 	padding: 32px;
 	background: #f4f7f9;
 	box-shadow: 2px 2px 8px 0px #0008;
@@ -72,7 +72,7 @@
 	justify-content: center;
 	padding: 8px;
 }
-#email-input, #pwd-input {
+#email-input-login, #pwd-input-login {
 	background: white;
 	padding: 8px;
 	margin-left: 8px;
@@ -120,4 +120,23 @@
 #forgotten-btn:hover {
 	color: white;
 	background: #683838;
+}
+
+
+
+
+#profile-data {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+}
+#profile-data input, #email-data {
+	font-size: small;
+	color: #222;
+	background: transparent;
+	border: 1px solid #222;
+	border-radius: 6px;
+	padding: 8px;
+	margin: 2px;
+	transition: color .1s, background .1s;
 }

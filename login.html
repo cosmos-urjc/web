@@ -100,11 +100,11 @@
 				<div id="inputs">
 					<div class="input-group">
 						<ion-icon name="mail"></ion-icon>
-						<input type="email" placeholder="ejemplo@gmail.com" id="email-input">
+						<input type="email" placeholder="ejemplo@gmail.com" id="email-input-login">
 					</div>
 					<div class="input-group">
 						<ion-icon name="lock"></ion-icon>
-						<input type="password" placeholder="contraseña..." id="pwd-input">
+						<input type="password" placeholder="contraseña..." id="pwd-input-login">
 					</div>
 				</div>
 				<div id="btns">
@@ -119,19 +119,33 @@
 		</div>
 
 		<div id="loggedin-div" style="display: none;">
-			<h3 id="user-welcome">Bienvenido/a</h3>
-			<p id="user-info"></p>
+			<div id="profile-data">
 
-			<div>
-				<input type="text" placeholder="Nombre de usuario..." id="name-input">
+				<h3 id="user-welcome">Bienvenido/a</h3>
+				<div id="profile-image">
+					
+				</div>
+				<h3>Datos del perfil</h3>
+				Nombre de usuario
+				<input type="text" placeholder="Nombre de usuario..." id="username-input">
+				Nombre
+				<input type="text" placeholder="Nombre..." id="name-input">
+				Apellidos
+				<input type="text" placeholder="Apellidos..." id="surname-input">
+				Email
+				<div id="email-data"></div>
+				URL de foto de perfil
 				<input type="link" placeholder="https://picsum.photos/500/500" id="photourl-input">
-				<button onclick="update()" id="update">Actualizar datos</button>
+				Bio
+				<textarea rows="4" cols="50" placeholder="Bio..." id="bio-input"></textarea>
+				Texto libre
+				<textarea rows="4" cols="50" placeholder="Texto libre privado..." id="freetext-input"></textarea>
 			</div>
 
+			<button onclick="update()">Actualizar datos</button>
 			<button onclick="logout()">Cerrar sesión</button>
 			<button onclick="delete_account()">Borrar cuenta</button>
 		</div>
-
 	</div>
 	<footer>
 		<div class="footer-left">
