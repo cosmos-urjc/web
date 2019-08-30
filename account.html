@@ -73,18 +73,16 @@
 					<a href="contact.html">Contacto</a>
 				</li>
 				<li>
-					<a class="active" href="login.html">Iniciar sesión</a>
+					<a class="active" href="account.html">Cuenta</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
-	<div class="m" id="m3"></div>
-
 	<!-- LOGIN -->
 	<div class="first-section" id="log-div">
 
 		<div id="login-div">
-			<h2>Iniciar Sesión</h2>
+			<h2>Iniciar sesión</h2>
 			<div id="social-btn-div">
 				<button onclick="google_login()" id="google-btn">
 					<ion-icon name="logo-google"></ion-icon>
@@ -108,9 +106,9 @@
 					</div>
 				</div>
 				<div id="btns">
-					<button onclick="login()" id="login-btn">Iniciar Sesión</button>
+					<button onclick="login()" id="login-btn">Iniciar sesión</button>
 					<button onclick="register()" id="register-btn">Registrar</button>
-					<button onclick="forgotten()" id="forgotten-btn">He olvidado mi contraseña</button>
+					<button onclick="passwordForgotten()" id="forgotten-btn">He olvidado mi contraseña</button>
 					
 					
 					
@@ -144,7 +142,9 @@
 
 			<button onclick="update()">Actualizar datos</button>
 			<button onclick="logout()">Cerrar sesión</button>
-			<button onclick="delete_account()">Borrar cuenta</button>
+			<span id="verify-email"></span>
+			<button onclick="resetPassword()">Cambiar contraseña</button>
+			<button onclick="deleteAccount()">Borrar cuenta</button>
 		</div>
 	</div>
 	<footer>
