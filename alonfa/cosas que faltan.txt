@@ -1,0 +1,5 @@
+white line above background image in each page
+
+font flashes differently when loading(titles, exo)
+
+adapt to phone
