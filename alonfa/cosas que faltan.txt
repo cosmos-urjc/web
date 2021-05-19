@@ -1,8 +1,8 @@
+adapt to phone
+
 white line above background image in each page
 
 font flashes differently when loading(titles, exo)
-
-adapt to phone
 
 the tabs in "educación" glitch when you open more than one, don't close
 
