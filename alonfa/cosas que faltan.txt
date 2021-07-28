@@ -7,3 +7,5 @@ font flashes differently when loading(titles, exo)
 the tabs in "educación" glitch when you open more than one, don't close
 
 Decidir si es COSMOS o Cosmos y corregir consecuentemente
+
+favicon shows the old logo untill you reload several times?
