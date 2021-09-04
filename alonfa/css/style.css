@@ -13,9 +13,9 @@
     font-weight: normal;
     font-style: normal;
 } */
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap');
 
 :root {
 	--text-header-color: #000;
@@ -64,6 +64,7 @@ body {
 	 body has relative position.*/
 	min-height: 100vh;
 	padding-bottom: 120px;/*Space for the footer*/
+	padding-top: 0px; /*get rid of white bar*/
 	position: relative;
 
 	background: #fff;
@@ -500,6 +501,7 @@ header img {
 	background: white;
 }
 .section h1, h2, .section div {
+	font-family: Exo
 	display: flex;
 	justify-content: center;
 }
