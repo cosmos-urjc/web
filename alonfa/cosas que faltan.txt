@@ -1,11 +1,12 @@
-adapt to phone
+responsive design: se ve mal en el móvil
+- header (borrar página de contacto)
+- footer
+- revista
 
-white line above background image in each page
+rellenar aeromodelismo (Dani)
 
-font flashes differently when loading(titles, exo)
+hacer página rockets (Pat y Alejandro)
 
-the tabs in "educación" glitch when you open more than one, don't close
-
-Decidir si es COSMOS o Cosmos y corregir consecuentemente
+hacer página cosmosat (Ester y Raquel)
 
 favicon shows the old logo untill you reload several times?
