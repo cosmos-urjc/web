@@ -3,6 +3,8 @@ responsive design: se ve mal en el móvil
 - footer
 - revista
 
+finalizar página de inicio, ver qué poner
+
 rellenar aeromodelismo (Dani)
 
 hacer página rockets (Pat y Alejandro)
