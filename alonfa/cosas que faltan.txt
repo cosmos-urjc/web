@@ -1,14 +1,6 @@
-responsive design: se ve mal en el móvil
-- revista
-- footer
-
 finalizar página de inicio:
 - logos uni (spacecon)
 - inscripción
 - actualidad: spacecon y cometas
-
-rellenar parrafos en:
-- cosmosat
-- rocket team
 
 añadir poster cometas
