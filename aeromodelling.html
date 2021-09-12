@@ -4,405 +4,123 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112431571-5"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-	gtag('config', 'UA-112431571-5');
+		gtag('config', 'UA-112431571-5');
 	</script>
-
+	
 	<meta charset="utf-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta content="width=device-width,initial-scale=1" name="viewport">
-	<meta content="Página web de la Asociación Aeroespacial Cosmos" name="description">
-	<title>Aeromodelismo | Cosmos</title>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cosmos</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'><!-- Font -->
-	<link href="./main.a3f694c0.css" rel="stylesheet"></head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-
-
-
-	<!-- stuff for favicon -->
-	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-	<link rel="manifest" href="images/favicon/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
+	<link rel="icon" type="image" href="images/favicon.ico">
 
 </head>
-
-
 <body>
 	<header>
-			<nav class="navbar navbar-fixed-top navbar-default" style="width:100%;">
-					<div class="container" style="margin-left:0px; margin-right:0px; width:100%;">
-							<div class="navbar-header" >
-									<button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
-											<span class="sr-only">Toggle navigation</span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-									</button>
-									<a class="navbar-brand" href="./index.html" title="">
-											<img src="images/favicon/favicon-32x32.png" class="navbar-logo-img" alt="Logo" width="32" height="32">
-									</a>
-							</div>
-
-							<div class="collapse navbar-collapse" id="navbar-collapse-uarr" style="background-color: #fff;">
-									<ul class="nav navbar-nav navbar-left">
-											<li><a href="./education.html" title="">Educación</a></li>
-											<li><a href="./revista.html" title="">Revista</a></li>
-											<li><a href="./aeromodelling.html" title="">Aeromodelismo</a></li>
-											<li><a href="./rockets.html" title="">Rocket Team</a></li>
-											<li><a href="./cosmosat.html" title="">Cosmosat-1</a></li>
-											<li><a href="https://spacecon.etsit.urjc.es/" title="">SpaceCon</a></li>
-									</ul>
-									<ul class="nav navbar-nav navbar-right">
-											<li><a href="./info.html" title="">Info</a></li>
-											<li><a href="./contact.html" title="">Contacto</a></li>
-
-									</ul>
-							</div>
-					</div>
-			</nav>
+		<nav>
+			<ul class="header-left">
+				<li>
+					<a href="index.html" id="icon">
+						<img src="images/favicon.ico" id="icon-image" />
+					</a>
+				</li>
+				<li>
+					<a href="education.html">Educación</a>
+				</li>
+				<li>
+					<a href="rockets.html">Cohetes</a>
+				</li>
+				<li>
+					<a class="active" href="aeromodelling.html">Aeromodelismo</a>
+				</li>
+				<li>
+					<a href="research.html">Investigación</a>
+				</li>
+				<li>
+					<a href="culture.html">Cultura</a>
+				</li>
+				<li class="dropdown">
+					<a href="projects.html">Proyectos</a>
+					<ul class="dropdown-content">
+						<li>
+							<a href="">Ala volante</a>
+						</li>
+						<li>
+							<a href="">Cohetes de agua</a>
+						</li>
+						<li>
+							<a href="">Concurso de arte</a>
+						</li>
+						<li>
+							<a href=""></a>
+						</li>
+						<li>
+							<a href=""></a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="header-right">
+				<li>
+					<a href="info.html">Info</a>
+				</li>
+				<li>
+					<a href="contact.html">Contacto</a>
+				</li>
+				<li>
+					<a href="account.html">Cuenta</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
-
-
-	<div class="section-container background-color-container white-text-container" style="background-color:#628ebf">
-		<div class="section-container white-text-container background-image-container" style="background-image: url('.//images/bac/aeromodelling.png'); background-position:bottom">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-0">
-						<br><br>
-						<div class="text-center">
-							<h1 style="color:white;font-size: 4vw;"><b>AEROMODELISMO</b></h1>
-						</div>
-					</div>
-					<div class="col-md-5 col-md-offset-0">
-						<div class="section-container-spacer">
-							<div class="text-justify">
-								<br><br><br>
-								<p style="color:white;font-family:'Montserrat';font-size:15px;">
-									El equipo de aeromodelismo se dedica a hacer proyectos relacionados con objetos voladores; también llamados ‘los del vuelo atmosférico’ ;).
-								</p>
-
-							</div>
-						</div>
-					</div>
+	<div class="first-section dark-section">
+		<h2>AEROMODELISMO</h2>
+		<p>
+			El equipo de aeromodelismo se dedica a hacer proyectos relacionados con objetos voladores; también llamados ‘los del vuelo atmosférico’ ;). Realizan estudios de alas volantes y drones, y cursos con simuladores de vuelo.
+		</p>
+		<br>
+		<div class="image-section">
+			<div style="width: 50%; background: url('images/aeromodelling/simvuelo1.webp') no-repeat center; background-size: cover;"></div>
+			<div style="width: 50%; background: url('images/aeromodelling/simvuelo2.webp') no-repeat center; background-size: cover;"></div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer-left">
+			<ul style="display: inline-block; float: left;">
+				<li>
+					<a href="https://docs.google.com/document/d/1JCsOie2zNQspg8h-rVtuWD5g4GTfu7inIbeGcyhlrrk/edit?usp=sharing" target="_blank">Qué aprender</a>
+				</li>
+				<li>
+					<a href="entities.html">Entidades colaboradoras</a>
+				</li>
+			</ul>
+			<ul style="display: inline-block; float: right;">
+				<li><a href="cookies.html">Cookies</a></li>
+				<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXzTB64BxPZH1JsvJAMgx3bZwNBC5UngCPu6MTcT5tfQQX1A/viewform">Inscríbete</a></li>
+			</ul>
+		</div>
+		<div class="footer-middle">
+			<a href="index.html"></a>
+			<img src="images/logo.jpg">
+		</div>
+		<div class="footer-right">
+			<div id="follow-us-div">
+				<div id="follow-us">Síguenos</div>
+				<div>
+					<a href="https://twitter.com/cosmos_urjc" target="_blank">
+						<ion-icon name="logo-twitter"></ion-icon>
+					</a>
+					<a href="https://www.instagram.com/cosmos_urjc/" target="_blank">
+						<ion-icon name="logo-instagram"></ion-icon>
+					</a>
 				</div>
 			</div>
 		</div>
-	</div>
-
-
-	<div class="section-container">
-		<div class="container">
-
-
-			<br>
-
-			<div class="accordion" id="accordionExample">
-				<div class="card">
-					<div class="card-header" id="headingOne">
-						<div class="container-fluid" style="height:50px; background-image: url('./images/background-aeromodelismo.png')">
-							<div class="row">
-								<div class="col-xs-12">
-									<div class="text-center">
-										<h4 style="text-align:center; color:white">
-											<button class="btn " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style ="padding: 0px 0px ; font-size: 20px ; line-height: 0; outline: none ">
-												<b>HC-1</b>
-											</button>
-										</h4>
-									</div>
-								</div>
-							</div>
-						</div><br>
-						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-							<div class="card-body">
-								<div class="row">
-									<div class="col-md-2 col-md-offset-2">
-										<div class="text-center">
-											<br>
-											<div class="fa-container">
-												<i class="fa fa-plane fa-4x" aria-hidden="true" style="color:black"></i>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-6 col-md-offset-0">
-										<div class="text-justify">
-											<br>
-											<p>	El HC-1 es un ala volante cuya estructura está fabricada íntegramente en fibra	de carbono. El proceso de fabricación se basa en la combinación de técnicas de impresión 3D junto con materiales compuestos como la fibra de carbono seca.</p>
-											<br>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-4 col-md-offset-2">
-										<div class="item active">
-											<img class="img-responsive" src="./images/aeromodelling/hc1-1.jpg" alt="Image">
-										</div>
-									</div>
-									<div class="col-md-4 col-md-offset-0">
-										<div class="item active">
-											<img class="img-responsive" src="./images/aeromodelling/hc1-2.jpg" alt="Image">
-										</div>
-									</div>
-								</div><br>
-							</div>
-						</div>
-					</div>
-
-
-
-					<div class="container-fluid" style="height:50px; background-image: url('./images/background-aeromodelismo.png')">
-						<div class="row">
-							<div class="col-xs-12">
-								<div class="text-center">
-									<div class="card">
-										<div class="card-header" id="headingTwo">
-											<h4 style="text-align:center; color:white">
-												<button class="btn " type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style ="padding: 0px 0px ; font-size: 20px ; line-height: 0; outline: none ">
-													<b>MICROWING</b>
-												</button>
-											</h4>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><br>
-					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-						<div class="card-body">
-							<div class="row">
-								<div class="col-md-2 col-md-offset-2">
-									<div class="text-center">
-										<br>
-										<div class="fa-container">
-											<i class="fa fa-paper-plane fa-4x" aria-hidden="true" style="color:black"></i>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 col-md-offset-0">
-									<div class="text-justify">
-										<br>
-										<p>	Este proyecto se basa en un ala volante de 60cm de envergadura que se usó para "jugar" con este tipo de aeronaves marcadas por su inestabilidad. Con ello se pudo aprender acerca del funcionamiento de la electrónica que sirve como base de los futuros proyectos.</p>
-										<br>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-4 col-md-offset-2">
-									<div class="item active">
-										<img class="img-responsive" src="./images/aeromodelling/micro-1.png" alt="Image">
-									</div>
-								</div>
-								<div class="col-md-4 col-md-offset-0">
-									<div class="item active">
-										<img class="img-responsive" src="./images/aeromodelling/micro-2.jpg" alt="Image">
-									</div>
-								</div>
-							</div><br>
-						</div>
-					</div>
-
-
-
-
-					<div class="container-fluid" style="height:50px; background-image: url('./images/background-aeromodelismo.png')">
-						<div class="row">
-							<div class="col-xs-12">
-								<div class="text-center">
-									<div class="card">
-										<div class="card-header" id="headingThree">
-											<h4 style="text-align:center; color:white">
-												<button class="btn " type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" style ="padding: 0px 0px ; font-size: 20px ; line-height: 0; outline: none " >
-													<b>CURSO DE SIMULACIÓN AÉREA</b>
-												</button>
-											</h4>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><br>
-					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-						<div class="card-body">
-							<div class="row">
-								<div class="col-md-4 col-md-offset-2">
-									<div class="text-justify">
-										<br>
-										<p>	Este curso fue impartido por Carlos García, ex-alumno del grado de Ingeniería Aeroespacial en Aeronavegación y con titulación PPL(A), para difundir su experiencia como piloto a los asociados de la Asociación Aeroespacial Cosmos. Este curso acercó la curiosidad de los participantes a este ámbito aeronáutico. </p>
-										<br>
-									</div>
-								</div>
-								<div class="col-md-4 col-md-offset-0">
-									<div class="item active">
-										<img class="img-responsive" src="./images/aeromodelling/curso-1.jpg" alt="Image">
-									</div>
-								</div>
-						</div><br>
-						<div class="row">
-							<div class="col-md-4 col-md-offset-2">
-								<div class="item active">
-									<img class="img-responsive" src="./images/aeromodelling/curso-2.jpg" alt="Image">
-								</div>
-							</div>
-							<div class="col-md-4 col-md-offset-0">
-								<div class="text-justify">
-									<br>
-									<p>	Para ello utilizaron los simuladores de vuelo que tiene la universidad en el Campus de Fuenlabrada. </p>
-								</div>
-							</div>
-						</div><br>
-					</div>
-				</div>
-
-
-
-				<div class="container-fluid" style="height:50px; background-image: url('./images/background-aeromodelismo.png')">
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="text-center">
-								<div class="card">
-									<div class="card-header" id="headingFour">
-										<h4 style="text-align:center; color:white">
-											<button class="btn " type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" style ="padding: 0px 0px ; font-size: 20px ; line-height: 0; outline: none ">
-												<b>D.I.A.N.A.</b>
-											</button>
-										</h4>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div><br>
-				<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-2 col-md-offset-2">
-								<div class="text-center">
-									<br>
-									<div class="fa-container">
-										<i class="fa fa-bolt fa-4x" aria-hidden="true" style="color:black"></i>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-md-offset-0">
-								<div class="text-justify">
-									<br>
-									<p>	El proyecto D.I.A.N.A. es una aeronave VTOL eléctrica y autónoma para el análisis de desastres naturales y búsqueda de personas.</p>
-									<p>	Este proyecto está aún en fase de desarrollo.</p>
-									<br>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-					<div class="container-fluid" style="height:50px; background-image: url('./images/background-aeromodelismo.png')">
-						<div class="row">
-							<div class="col-xs-12">
-								<div class="text-center">
-									<div class="card">
-										<div class="card-header" id="headingFive">
-											<h4 style="text-align:center; color:white">
-												<button class="btn " type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive" style ="padding: 0px 0px ; font-size: 20px ; line-height: 0; outline: none ">
-													<b>FUENCOMETAS</b>
-												</button>
-											</h4>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><br>
-					<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-						<div class="card-body">
-							<div class="row">
-								<div class="col-md-2 col-md-offset-2">
-									<div class="text-center">
-										<br>
-										<div class="fa-container">
-											<i class="fa fa-star fa-4x" aria-hidden="true" style="color:black"></i>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 col-md-offset-0">
-									<p>	El concurso <b> FuenCometas</b> se organiza en colaboración con el Ayundamiento de Fuenlabrada y se celebra en el campus de Fuenlabrada de la Universidad Rey Juan Carlos.
-									<br>
-									Para ver toda la información del concurso, visita la página dedicada a este:</p>
-									<br>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-8 col-md-offset-2">
-									<div class="text-center">
-										<button type="button" class="btn btn-secondary"><a href="./cometas.html" class="btn btn-secondary"  title="">FuenCometas</a></button>
-									</div>
-								</div>
-							</div>
-						</div>
-				</div>
-
-
-			</div>
-
-
-		</div>
-
-	</div>
-</div>
-
-
-	<footer style="background-color:#628ebf">
-		<div class="section-container footer-container">
-		<div class="container" style="width: 100%;">
-			<div class="row">
-				<div class="col-md-4 ">
-					<img src="images/logoURJC.png" width="50%">
-				</div>
-				<div class="col-md-4 ">
-					<img src="images/headings/rocket_vector_double.png" width="50%">
-				</div>
-				<div class="col-md-4 ">
-					<div id="follow-us-div">
-						<div id="follow-us">¡Síguenos en redes!</div>
-						<div>
-							<a href="https://twitter.com/cosmos_urjc" title="">
-								<i class="fa fa-twitter fa-1x " style="color:white; padding:7px" aria-hidden="true"></i>
-							</a>
-							<a href="https://www.instagram.com/cosmos_urjc/" title="">
-								<i class="fa fa-instagram fa-1x" style="color:white; padding:7px" aria-hidden="true"></i>
-							</a>
-							<a href="https://www.linkedin.com/company/cosmos-urjc" target="_blank">
-								<i class="fa fa-linkedin fa-1x"  style="color:white; padding:7px" aria-hidden="true"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	</footer>
 	<script type="text/javascript" src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
-	<script type="text/javascript" src="./main.41beeca9.js"></script>
-	</body>
-	</html>
+</body>
+</html>

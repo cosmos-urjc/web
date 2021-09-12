@@ -4,479 +4,137 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112431571-5"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-	gtag('config', 'UA-112431571-5');
+		gtag('config', 'UA-112431571-5');
 	</script>
-
+	
 	<meta charset="utf-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta content="width=device-width,initial-scale=1" name="viewport">
-	<meta content="Página web de la Asociación Aeroespacial Cosmos" name="description">
-	<title>Educación | Cosmos</title>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cosmos</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'><!-- Font -->
-	<link href="./main.a3f694c0.css" rel="stylesheet"></head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-
-
-
-	<!-- stuff for favicon -->
-	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-	<link rel="manifest" href="images/favicon/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
+	<link rel="icon" type="image" href="images/favicon.ico">
 
 </head>
-
-
 <body>
 	<header>
-			<nav class="navbar navbar-fixed-top navbar-default" style="width:100%;">
-					<div class="container" style="margin-left:0px; margin-right:0px; width:100%;">
-							<div class="navbar-header" >
-									<button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
-											<span class="sr-only">Toggle navigation</span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-									</button>
-									<a class="navbar-brand" href="./index.html" title="">
-											<img src="images/favicon/favicon-32x32.png" class="navbar-logo-img" alt="Logo" width="32" height="32">
-									</a>
-							</div>
-
-							<div class="collapse navbar-collapse" id="navbar-collapse-uarr" style="background-color: #fff;">
-									<ul class="nav navbar-nav navbar-left">
-											<li><a href="./education.html" title="">Educación</a></li>
-											<li><a href="./revista.html" title="">Revista</a></li>
-											<li><a href="./aeromodelling.html" title="">Aeromodelismo</a></li>
-											<li><a href="./rockets.html" title="">Rocket Team</a></li>
-											<li><a href="./cosmosat.html" title="">Cosmosat-1</a></li>
-											<li><a href="https://spacecon.etsit.urjc.es/" title="">SpaceCon</a></li>
-									</ul>
-									<ul class="nav navbar-nav navbar-right">
-											<li><a href="./info.html" title="">Info</a></li>
-											<li><a href="./contact.html" title="">Contacto</a></li>
-
-									</ul>
-							</div>
-					</div>
-			</nav>
+		<nav>
+			<ul class="header-left">
+				<li>
+					<a href="index.html" id="icon">
+						<img src="images/favicon.ico" id="icon-image" />
+					</a>
+				</li>
+				<li>
+					<a class="active" href="education.html">Educación</a>
+				</li>
+				<li>
+					<a href="rockets.html">Cohetes</a>
+				</li>
+				<li>
+					<a href="aeromodelling.html">Aeromodelismo</a>
+				</li>
+				<li>
+					<a href="research.html">Investigación</a>
+				</li>
+				<li>
+					<a href="culture.html">Cultura</a>
+				</li>
+				<li class="dropdown">
+					<a href="projects.html">Proyectos</a>
+					<ul class="dropdown-content">
+						<li>
+							<a href="">Ala volante</a>
+						</li>
+						<li>
+							<a href="">Cohetes de agua</a>
+						</li>
+						<li>
+							<a href="">Concurso de arte</a>
+						</li>
+						<li>
+							<a href=""></a>
+						</li>
+						<li>
+							<a href=""></a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="header-right">
+				<li>
+					<a href="info.html">Info</a>
+				</li>
+				<li>
+					<a href="contact.html">Contacto</a>
+				</li>
+				<li>
+					<a href="account.html">Cuenta</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
-
-
-	<div class="section-container background-color-container white-text-container" style="background-color:#47719d">
-		<div class="section-container white-text-container background-image-container" style="background-image: url('.//images/bac/education.png'); background-position:bottom">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-0">
-						<br><br>
-						<div class="text-center">
-							<h1 style="color:white;font-size: 7vw;"><b>EDUCACIÓN</b></h1>
-						</div>
-					</div>
-					<div class="col-md-5 col-md-offset-0">
-						<div class="section-container-spacer">
-							<div class="text-justify">
-								<br><br>
-								<p style="color:white;font-family:'Montserrat';font-size:15px;">
-									El equipo de educación es el más versátil de Cosmos<span>&#8212;</span>organiza una gran variedad de actividades, la mayoría a corto plazo, y aprovecha toda oportunidad para compartir recursos, experiencia, formación y cultura relacionado con el mundo aeroespacial.
-								</p>
-								<p style="color:white;font-family:'Montserrat';font-size:15px;">
-									Las actividades que organizamos desde este equipo se pueden dividir en varias categorías, las cuales están dispuestas a continuación:
-								</p>
-
-							</div>
-						</div>
-					</div>
-				</div><br><br><br><br>
-			</div>
+	<div class="first-section dark-section">
+		<h2>EDUCACIÓN</h2>
+		<p>
+			El equipo de educación está organizando charlas, excursiones, talleres y mucho más, tanto para alumnos de la URJC como para la divulgación entre niños y jóvenes de la comunidad de Madrid.
+		</p>
+		<br>
+		<div class="image-section">
+			<div style="width: 50%; background: url('images/education/aula.webp') no-repeat center; background-size: cover;"></div>
+			<div style="width: 50%; background: url('images/education/charla.webp') no-repeat center; background-size: cover;"></div>
 		</div>
-    </div>
-
-
-	<div class="section-container">
-		<div class="container">
-
-
+		<br>
+		<div>
+			<p>
+				Actualmente, tenemos varios proyectos en marcha. Entre ellos, un ciclo de charlas con ponentes del a industria aeroespacial, un curso de aeropython para alumnos de la URJC, y varias visitas y cursos.
+			</p>
+			<div class="image-section">
+				<div style="width: 22%; background: url('images/education/latex.webp') no-repeat center; background-size: cover;"></div>
+				<div style="width: 22%; background: url('images/education/ciclocharlas.webp') no-repeat center; background-size: cover;"></div>
+				<div style="width: 22%; background: url('images/education/rolls.webp') no-repeat center; background-size: cover;"></div>
+				<div style="width: 22%; background: url('images/education/aeropython.webp') no-repeat center; background-size: cover;"></div>
+				<br>
+			</div>
 			<br>
-
-			<div class="accordion" id="accordionExample">
-				<div class="card">
-					<div class="card-header" id="headingOne">
-						<div class="container-fluid" style="height:50px; background-image: url('./images/background_aviones.png')">
-							<div class="row">
-								<div class="col-md-12">
-									<div class="text-center">
-										<h4 style="text-align:center; color:white">
-											<button class="btn " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style ="padding: 0px 0px ; font-size: 20px ; line-height: 0; outline: none ">
-												<b>CHARLAS Y CONFERENCIAS</b>
-											</button>
-										</h4>
-									</div>
-								</div>
-							</div>
-						</div><br>
-
-						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-							<div class="card-body">
-								<div class="row">
-									<div class="col-md-2 col-md-offset-2">
-										<div class="text-center">
-											<br>
-											<div class="fa-container">
-												<i class="fa fa-graduation-cap fa-4x" aria-hidden="true" style="color:black"></i>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-6 col-md-offset-0">
-										<div class="text-justify">
-											<br>
-											<p>Organizamos charlas y conferencias guays sobre varios temas distintos relacionados al mundo aeroespacial, con ponentes expertos en diversos temas: satélites, vuelos espaciales, drones, y mucho más.</p>
-											<p> A continuación puedes ver algunas de las últimas sesiones organizadas por Cosmos. Algunas se han grabado, y se pueden ver en nuestro <a href="https://www.youtube.com/channel/UCDdJrEoH0U3i_DeCsaI5TeA">canal de YouTube</a>.</p>
-											<br><br>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-2 col-md-offset-0">
-										<div class="item active">
-											<a href="https://www.youtube.com/watch?v=N6i2k8PhVaw">
-												<img class="img-responsive" src="./images/education/origami03.png" alt="Image">
-											</a>
-										</div>
-									</div>
-									<div class="col-md-2 col-md-offset-1">
-										<div class="item active">
-											<a href="https://www.youtube.com/watch?v=xLCKIJ0-sko">
-												<img class="img-responsive" src="./images/education/cartel_pequesats.png" alt="Image">
-											</a>
-										</div>
-									</div>
-									<div class="col-md-3 col-md-offset-1">
-										<div class="item active">
-											<img class="img-responsive" src="./images/education/charla-hodei.jpg" alt="Image">
-										</div>
-									</div>
-									<div class="col-md-2 col-md-offset-1">
-										<div class="item active">
-											<img class="img-responsive" src="./images/education/charlas_pablo.jpg" alt="Image">
-										</div>
-									</div>
-								</div><br><br>
-								<div class="row">
-									<div class="col-md-3 col-md-offset-2">
-										<a href="https://spacecon.etsit.urjc.es/">
-											<img class="img-responsive" src="./images/education/spacecon_logo_small.png" alt="Image">
-										</a>
-									</div>
-									<div class="col-md-4 col-md-offset-1">
-										<div class="text-justify">
-										<br>
-											<p>Una extensión de las charlas es <b> SpaceCon</b>, un congreso organizado por Cosmos a partir del año 2020. Toda la información relevante a este evento se puede encontrar en la página web dedicada:</p>
-											<p><center><a href="https://spacecon.etsit.urjc.es/"> spacecon.etsit.urjc.es</a>.</center></p>
-										</div>
-									</div>
-								</div><br>
-							</div>
-						</div>
-					</div>
-
-
-
-					<div class="container-fluid" style="height:50px; background-image: url('./images/background_aviones.png')">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="text-center">
-									<div class="card">
-										<div class="card-header" id="headingTwo">
-											<h4 style="text-align:center; color:white">
-												<button class="btn " type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style ="padding: 0px 0px ; font-size: 20px ; line-height: 0; outline: none ">
-													<b>CRASH COURSE: SOFTWARE</b>
-												</button>
-											</h4>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><br>
-					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-						<div class="card-body">
-							<div class="row">
-								<div class="col-md-2 col-md-offset-2">
-									<div class="text-center">
-										<br>
-										<div class="fa-container">
-											<i class="fa fa-laptop fa-4x" aria-hidden="true" style="color:black"></i>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 col-md-offset-0">
-									<div class="text-justify">
-										<br>
-										<p>Cosmos ha realizado una serie de cursos de introducción a software, que denominamos <i> Crash Course</i>, donde miembros de Cosmos imparten clases de introducción a diversas herramientas útiles para alumnos de ingeniería, o de otras disciplinas. </p>
-										<p> A día de hoy, se han realizado cursos de MATLAB, LaTeX y Overleaf, y Python (en colaboración con AeroPython). Las clases más recientes están disponibles para ver en nuestro <a href="https://www.youtube.com/watch?v=IFNAVyd6P80&list=PLiF-4jwlRAl3ekb1mxzPXBd_lgVTHq14E">canal de YouTube</a>.</p>
-										<br>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-2 col-md-offset-2">
-									<div class="item active">
-										<a href="https://www.youtube.com/watch?v=XgZDdyxOwA4&list=PLiF-4jwlRAl3ekb1mxzPXBd_lgVTHq14E&index=3&ab_channel=CosmosAeroespacialURJC">
-											<img class="img-responsive" src="./images/education/cartel_matlab.png" alt="Image">
-										</a>
-									</div>
-								</div>
-								<div class="col-md-2 col-md-offset-1">
-									<div class="item active">
-										<a href="https://www.youtube.com/watch?v=IFNAVyd6P80&list=PLiF-4jwlRAl3ekb1mxzPXBd_lgVTHq14E&ab_channel=CosmosAeroespacialURJC">
-											<img class="img-responsive" src="./images/education/cartel_latex.png" alt="Image">
-										</a>
-									</div>
-								</div>
-								<div class="col-md-2 col-md-offset-1">
-									<div class="item active">
-										<a href="https://github.com/AeroPython/Curso_AeroPython">
-											<img class="img-responsive" src="./images/education/aeropython.jpg" alt="Image">
-										</a>
-									</div>
-								</div>
-							</div><br><br><br>
-						</div>
-					</div>
-
-
-
-
-					<div class="container-fluid" style="height:50px; background-image: url('./images/background_aviones.png')">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="text-center">
-									<div class="card">
-										<div class="card-header" id="headingThree">
-											<h4 style="text-align:center; color:white">
-												<button class="btn " type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" style ="padding: 0px 0px ; font-size: 20px ; line-height: 0; outline: none " >
-													<b>CLASES DE REFUERZO</b>
-												</button>
-											</h4>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><br>
-					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-						<div class="card-body">
-							<div class="row">
-								<div class="col-md-5 col-md-offset-1">
-									<div class="text-justify">
-										<p>Cosmos organiza clases de refuerzo para las asignaturas más difíciles de las carreras de Ingeniería Aeroespacial impartidas por la Universidad Rey Juan Carlos. Resolución de ejercicios, exámenes de prueba, y consejos específicos por parte de alumnos veteranos.</p>
-									</div>
-								</div>
-								<div class="col-md-4 col-md-offset-1">
-									<div class="text-justify">
-										<p>Para mantenerte al tanto de las clases ofrecidas en cada semestre, síguenos en redes:</p>
-										<p><center>
-											<a href="https://www.instagram.com/spacecon_urjc/" class="social-round-icon white-round-icon fa-icon" title="">
-												<i class="fa fa-instagram" aria-hidden="true"></i>
-											</a>
-											<a href="https://twitter.com/spacecon_urjc" class="social-round-icon white-round-icon fa-icon" title="">
-												<i class="fa fa-twitter" aria-hidden="true"></i>
-											</a>
-										</center>
-										</p>
-									</div>
-							</div>
-						</div><br>
-					</div>
-				</div>
-
-
-
-				<div class="container-fluid" style="height:50px; background-image: url('./images/background_aviones.png')">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="text-center">
-								<div class="card">
-									<div class="card-header" id="headingFour">
-										<h4 style="text-align:center; color:white">
-											<button class="btn " type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" style ="padding: 0px 0px ; font-size: 20px ; line-height: 0; outline: none ">
-												<b>TERTULIAS Y DIVULGACIÓN</b>
-											</button>
-										</h4>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div><br>
-				<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-2 col-md-offset-2">
-								<div class="text-center">
-									<br>
-									<div class="fa-container">
-										<i class="fa fa-leanpub fa-4x" aria-hidden="true" style="color:black"></i>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-md-offset-0">
-								<div class="text-justify">
-									<br>
-									<p>Aparte de las charlas técnicas, Cosmos tambien tiene como fin la divulgación STEM, la inclusividad dentro de los campos técnicos y la unión entre ámbitos técnicos y artísticos. </p>
-									<p> Con esto en mente, hemos organizado una serie de tertulias, concursos y eventos que expanden los límites de las parcepciones y los prejuicios dentro del ámbito de la ingeniería aeroespacial. </p>
-									<p>A continuación puedes ver algunas de las últimas sesiones organizadas por Cosmos. </p>
-									<br>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-2 col-md-offset-0">
-								<div class="item active">
-									<a href="https://www.youtube.com/watch?v=rbNy0OLh6Ds">
-										<img class="img-responsive" src="./images/education/tertulia8m.png" alt="Image">
-									</a>
-								</div>
-							</div>
-							<div class="col-md-2 col-md-offset-1">
-								<div class="item active">
-									<img class="img-responsive" src="./images/education/cine_poster1.jpg" alt="Image">
-								</div>
-							</div>
-							<div class="col-md-2 col-md-offset-1">
-								<div class="item active">
-									<img class="img-responsive" src="./images/education/nebulosa.jpg" alt="Image">
-								</div>
-							</div>
-							<div class="col-md-3 col-md-offset-1">
-								<div class="item active">
-									<img class="img-responsive" src="./images/education/tertuliaarte.jpg" alt="Image">
-								</div>
-							</div>
-						</div><br><br>
-						<div class="row">
-						<div class="col-md-4 col-md-offset-1">
-							<div class="text-justify">
-								<p>Cosmos también participa en eventos con niños y adolescentes, buscando promover un interés por carreras STEM entre los jóvenes de la Comunidad de Madrid.</p>
-								<p> Miembros de Cosmos han asistido a AULA en 2019 y 2020, y también han realizado charlas con alumnos de bachillerato.</p>
-							</div>
-						</div>
-							<div class="col-md-4 col-md-offset-1">
-									<img class="img-responsive" src="./images/education/aula.jpg" alt="Image">
-							</div>
-						</div><br>
-					</div>
-				</div>
-			</div>
-
-
-
-
-			<div class="container-fluid" style="height:50px; background-image: url('./images/background_aviones.png')">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="text-center">
-							<div class="card">
-								<div class="card-header" id="headingSix">
-									<h4 style="text-align:center; color:white">
-										<button class="btn " type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix" style ="padding: 0px 0px ; font-size: 20px ; line-height: 0; outline: none ">
-											<b>YOUTUBE</b>
-										</button>
-									</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div><br>
-			<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-				<div class="card-body">
-
-					<div class="row">
-						<div class="col-md-2 col-md-offset-2">
-							<div class="text-center">
-								<br>
-								<a href="https://www.youtube.com/channel/UCDdJrEoH0U3i_DeCsaI5TeA">
-								<div class="fa-container">
-									<i class="fa fa-youtube fa-4x" aria-hidden="true" style="color:black"></i>
-								</div>
-								</a>
-							</div>
-						</div>
-						<div class="col-md-6 col-md-offset-0">
-							<div class="text-justify">
-								<br>
-								<p>Cosmos se ha adaptado a un mundo post-pandemia, y ya que se organizan las charlas y cursos virtualmente, estamos grabando algunos eventos para que se puedan ver en diferido.</p>
-								<p> Para ver las grabaciones de charlas, cursos y tertulias, visita nuestro <a href="https://www.youtube.com/channel/UCDdJrEoH0U3i_DeCsaI5TeA">canal de YouTube</a>.</p>
-								<br><br><br>
-							</div>
-						</div>
-					</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer-left">
+			<ul style="display: inline-block; float: left;">
+				<li>
+					<a href="https://docs.google.com/document/d/1JCsOie2zNQspg8h-rVtuWD5g4GTfu7inIbeGcyhlrrk/edit?usp=sharing" target="_blank">Qué aprender</a>
+				</li>
+				<li>
+					<a href="entities.html">Entidades colaboradoras</a>
+				</li>
+			</ul>
+			<ul style="display: inline-block; float: right;">
+				<li><a href="cookies.html">Cookies</a></li>
+				<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXzTB64BxPZH1JsvJAMgx3bZwNBC5UngCPu6MTcT5tfQQX1A/viewform">Inscríbete</a></li>
+			</ul>
+		</div>
+		<div class="footer-middle">
+			<a href="index.html"></a>
+			<img src="images/logo.jpg">
+		</div>
+		<div class="footer-right">
+			<div id="follow-us-div">
+				<div id="follow-us">Síguenos</div>
+				<div>
+					<a href="https://twitter.com/cosmos_urjc" target="_blank">
+						<ion-icon name="logo-twitter"></ion-icon>
+					</a>
+					<a href="https://www.instagram.com/cosmos_urjc/" target="_blank">
+						<ion-icon name="logo-instagram"></ion-icon>
+					</a>
 				</div>
 			</div>
 		</div>
-
-
-	</div>
-
-</div>
-
-
-
-<footer style="background-color:#47719d">
-	<div class="section-container footer-container">
-	<div class="container" style="width: 100%;">
-		<div class="row">
-			<div class="col-md-4 ">
-				<img src="images/logoURJC.png" width="50%">
-			</div>
-			<div class="col-md-4 ">
-				<img src="images/headings/rocket_vector_double.png" width="50%">
-			</div>
-			<div class="col-md-4 ">
-				<div id="follow-us-div">
-					<div id="follow-us">¡Síguenos en redes!</div>
-					<div>
-						<a href="https://twitter.com/cosmos_urjc" title="">
-							<i class="fa fa-twitter fa-1x " style="color:white; padding:7px" aria-hidden="true"></i>
-						</a>
-						<a href="https://www.instagram.com/cosmos_urjc/" title="">
-							<i class="fa fa-instagram fa-1x" style="color:white; padding:7px" aria-hidden="true"></i>
-						</a>
-						<a href="https://www.linkedin.com/company/cosmos-urjc" target="_blank">
-							<i class="fa fa-linkedin fa-1x"  style="color:white; padding:7px" aria-hidden="true"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-</footer>
-<script type="text/javascript" src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
-<script type="text/javascript" src="./main.41beeca9.js"></script>
+	</footer>
+	<script type="text/javascript" src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
 </body>
 </html>

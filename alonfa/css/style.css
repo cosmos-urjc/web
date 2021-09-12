@@ -1,0 +1,595 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+/* @font-face {
+    font-family: 'exothin_italic';
+    src: url('fonts/exo-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('fonts/exo-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'exothin';
+    src: url('.//fonts/exo-variablefont_wght-webfont.woff2') format('woff2'),
+         url('.//fonts/exo-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+
+:root {
+	--text-header-color: #000;
+	--bkg-color: #111;
+	--link-color: #248;/*#eef*/
+	--link-hover-color: #248;/*#bbc*/
+
+	--text-color: black;
+}
+
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #bbb;
+	border-radius: 50px;
+	border-left: solid 1px #eee;
+	border-right: solid 1px #eee;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #888;
+
+}
+
+* {
+	box-sizing: border-box;
+}
+html, body {
+	margin: 0;
+}
+body {
+	/*min-height 100vh (not 100%. Would be of the html)
+	 to keep the footer down when there isn't content. But
+	 a padding at the bottom, below the footer, so that it
+	 doesn't overlap the content. It would do that because
+	 it's position is absolute, so that the bottom property
+	 works. The bottom property works relative to the nearest
+	 parent element that hasn't static positioning, so the
+	 body has relative position.*/
+	min-height: 100vh;
+	padding-bottom: 200px;/*Space for the footer*/
+	padding-top: 0px; /*get rid of white bar*/
+	position: relative;
+
+	background: #fff;
+	font-family: 'Open Sans', Roboto, Helvetica, sans-serif;
+	color: var(--text-color);
+}
+.section-container-spacer {
+	margin-bottom:20px
+}
+.background-color-container {
+	background-color:#3f5d76;
+	padding:30px 0
+}
+.border-section-container {
+	background-color:#ffffff;
+	border-top:0px solid #eee;
+	border-bottom:0px solid #eee
+}
+.white-text-container h1,.white-text-container h2,.white-text-container h3,.white-text-container h4,.white-text-container h5,.white-text-container p {
+	color:#fff;
+	text-shadow:
+	0 1px 3px #000
+}
+.white-text-container a {
+		color:#82aad4;
+		text-shadow:
+		0 1px 3px #000;
+
+    font-weight: bold;
+}
+.background-image-container {
+	position:relative;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-position:top;
+	padding:9% 0
+}
+
+
+input[type=button].btn-block,
+input[type=reset].btn-block,
+input[type=submit].btn-block {
+    width: 100%
+}
+
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear
+}
+
+.fade.in {
+    opacity: 1
+}
+
+.collapse {
+    display: none
+}
+
+.collapse.in {
+    display: block
+}
+
+tr.collapse.in {
+    display: table-row
+}
+
+tbody.collapse.in {
+    display: table-row-group
+}
+
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-property: height, visibility;
+    transition-property: height, visibility;
+    -webkit-transition-duration: .35s;
+    transition-duration: .35s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent
+}
+
+.dropdown,
+.dropup {
+    position: relative
+}
+
+.dropdown-toggle:focus {
+    outline: 0
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 15px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 2px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    background-clip: padding-box
+}
+
+.dropdown-menu.pull-right {
+    right: 0;
+    left: auto
+}
+
+.dropdown-menu .divider {
+    height: 1px;
+    margin: 12.5px 0;
+    overflow: hidden;
+    background-color: #e5e5e5
+}
+
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.81;
+    color: #333;
+    white-space: nowrap
+}
+
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
+    text-decoration: none;
+    color: #262626;
+    background-color: #f5f5f5
+}
+
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:focus,
+.dropdown-menu>.active>a:hover {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    background-color: #8b62ff
+}
+
+.dropdown-menu>.disabled>a,
+.dropdown-menu>.disabled>a:focus,
+.dropdown-menu>.disabled>a:hover {
+    color: #777
+}
+
+.dropdown-menu>.disabled>a:focus,
+.dropdown-menu>.disabled>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    cursor: not-allowed
+}
+
+.open>.dropdown-menu {
+    display: block
+}
+
+.open>a {
+    outline: 0
+}
+
+.dropdown-menu-right {
+    left: auto;
+    right: 0
+}
+
+.dropdown-menu-left {
+    left: 0;
+    right: auto
+}
+
+.dropdown-header {
+    display: block;
+    padding: 3px 20px;
+    font-size: 13px;
+    line-height: 1.81;
+    color: #777;
+    white-space: nowrap
+}
+
+.dropdown-backdrop {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 990
+}
+
+.pull-right>.dropdown-menu {
+    right: 0;
+    left: auto
+}
+
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+    border-top: 0;
+    border-bottom: 4px dashed;
+    border-bottom: 4px solid\9;
+    content: ""
+}
+
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 2px
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: transparent
+}
+
+body {
+    font-family: Fira Sans, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.81;
+    color: #555;
+    background-color: #fff
+}
+header {
+	position: fixed;
+	display: flex;
+	top: 0;
+	width: 100%;
+	height: 56px;
+	z-index: 10;
+
+	font-size: 16px;
+	line-height: 24px;
+
+	overflow: visible;
+	background:#ffffff; /* #080808c0; */
+	box-shadow: 0px 1px 8px 0px #0008;
+}
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	color: #29e;
+	text-decoration: underline;
+}
+
+
+.active {
+	/*color: #fff;*/
+	border-bottom: solid 4px #cccc;
+}
+header img {
+	height: 40px;
+	width: 40px;
+}
+/****COSMOS LOGO****/
+#icon {
+	/*Remove the border at the bottom to this <a> element*/
+	border: none;
+	padding: 8px 8px 8px 4px;
+}
+#icon-image {
+	/*Leave place for the border of the image*/
+	border: solid 2px transparent;
+	border-radius: 999px;
+	transition: border .1s ease-out;
+}
+#active-icon-image {
+	border: solid 2px #cccc;
+	border-radius: 999px;
+	transition: border .1s ease-out;
+}
+#icon:hover #icon-image{
+	border: solid 2px white;
+	border-radius: 999px;
+}
+#icon:hover #active-icon-image{
+	border: solid 2px white;
+	border-radius: 999px;
+}
+
+.dropdown {
+	padding: 16px 0;
+	display: none;
+}
+.dropdown-content {
+	display: none;
+	position: fixed;
+	top: 56px;
+	height: auto;/*Why I need this?*/
+
+	border-radius: 0 0 8px 4px;
+	background: var(--bkg-color);
+	box-shadow: 0px 1px 8px 0px #0008;
+}
+.dropdown:hover .dropdown-content {
+	display: flex;
+	flex-flow: column;
+}
+
+
+
+.dark-section {
+	display: flex;
+	justify-content: center;
+
+	padding: 24px 16px 50px 16px;
+	flex-flow: column;
+
+	background: url('../images/bg1.jpg') no-repeat center fixed;
+	background-size: cover;
+	color: white;
+	text-shadow: 1px 1px 2px black;
+}
+.dark-section h1, .dark-section h2,
+.dark-section h3, .dark-section h4,
+.dark-section h5, .dark-section p {
+	text-align: center;
+}
+.dark-section p {
+	width: 90%;
+	max-width: 1000px;
+	margin: 16px auto;
+}
+.first-section {
+	padding: 80px 16px 50px 16px !important;
+}
+#index-image-section {
+	display: flex;
+	justify-content: space-around;
+	height: 30vw;
+	min-height: 200px;
+	max-height: 300px;
+}
+.image-section {
+	display: flex;
+	justify-content: space-around;
+	height: 30vw;
+	max-height: 512px;
+}
+.entities {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
+.entities img {
+	padding: 16px;
+
+}
+.section {
+	display: flex;
+	justify-content: center;
+
+	padding: 32px 16px;
+	flex-flow: column wrap;
+
+	background: white;
+}
+.section h1, h2, .section div {
+	display: flex;
+	justify-content: center;
+}
+.twitter * {
+	box-shadow: 2px 4px 8px 0px #0004;
+	border-radius: 8px;
+	max-width: 800px;
+	max-height: 600px;
+}
+#enroll-button {
+	padding: 16px;
+	border-radius: 1000px;
+	background: linear-gradient(140deg,#198cff,#00080f);
+	text-decoration: none;
+	color: white;
+	box-shadow: 3px 4px 8px 0px #0008;
+}
+#enroll-button:hover {
+	color: #eee;
+	box-shadow: inset 3px 4px 8px 0px #0008;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;  /*Inside the body, with position relative*/
+	bottom: 0;
+	width: 100%;
+	min-height: 120px;
+	padding: 0px 70px;
+	font-size: small;
+	overflow: hidden;
+
+	background-color: #3f5d76;
+	text-align: center;
+	color: white;
+}
+.footer-left {
+	display: flex;
+	width: 50%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.footer-left img {
+	position: absolute;
+	top: 22%;
+	left: 13%;
+	height: 70px;
+	/* border-radius: 3000px; */
+	/* box-shadow: 4px 8px 20px 0px #0000; */
+}
+.footer-right {
+	display: flex;
+	width: 50%;
+	padding: 30px 90px 16px 16px;
+	flex-flow: row-reverse wrap;
+}
+#follow-us-div {
+	display: flex;
+	flex-flow: column wrap;
+	font-size: 130%;
+}
+#follow-us {
+	padding: 8px;
+}
+.footer-middle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /*50% of himself*/
+	width: 80px;
+	height: 80px;
+}
+.footer-middle img {
+	position: absolute;
+	top: 0%;
+	left: -72%;
+	height: 110px;
+	/* border-radius: 3000px; */
+	/* box-shadow: 4px 8px 20px 0px #0000; */
+}
+/* .footer-middle a {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 999px;
+} */
+
+footer a {
+	color: white;
+	text-decoration: none;
+	font-weight: normal;
+}
+footer a:hover {
+	text-decoration: none;
+	font-weight: normal;
+}
+footer ul {
+	list-style: none;
+	padding: 16px;
+}
+ion-icon {
+	font-size: 22px;
+	margin: 8px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+}
+
+h1 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 32px;
+}
+
+h2 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 24px;
+}
