@@ -1,14 +1,14 @@
 responsive design: se ve mal en el móvil
-- header (borrar página de contacto)
-- footer
 - revista
+- footer
 
-finalizar página de inicio, ver qué poner
+finalizar página de inicio:
+- logos uni (spacecon)
+- inscripción
+- actualidad: spacecon y cometas
 
-rellenar aeromodelismo (Dani)
+rellenar parrafos en:
+- cosmosat
+- rocket team
 
-hacer página rockets (Pat y Alejandro)
-
-hacer página cosmosat (Ester y Raquel)
-
-favicon shows the old logo untill you reload several times?
+añadir poster cometas
