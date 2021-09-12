@@ -14,13 +14,10 @@
 	<meta charset="utf-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="width=device-width,initial-scale=1" name="viewport">
-	<meta content="description" name="description">
+	<meta content="Página web de la Asociación Aeroespacial Cosmos" name="description">
 	<title>Cosmos</title>
-	<link rel="icon" type="image" href="images/favicon.ico">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'><!-- Font -->
 	<link href="./main.a3f694c0.css" rel="stylesheet"></head>
@@ -49,63 +46,41 @@
 	<meta name="theme-color" content="#ffffff">
 
 </head>
+
+
 <body>
 	<header>
-		<nav>
-			<ul class="header-left">
-				<li>
-					<a href="index.html" id="icon">
-						<img src="images/favicon/favicon-32x32.png"  />
-					</a>
-				</li>
-				<li>
-					<a href="education.html">Educación</a>
-				</li>
-				<li>
-					<a href="revista.html">Revista</a>
-				</li>
-				<li>
-					<a href="aeromodelling.html">Aeromodelismo</a>
-				</li>
-				<li>
-					<a href="cohetes.html">Rocket Team</a>
-				</li>
-				<li>
-					<a href="culture.html">Cosmosat-1</a>
-				</li>
-				<li class="dropdown">
-					<a href="projects.html">Proyectos</a>
-					<ul class="dropdown-content">
-						<li>
-							<a href="">Ala volante</a>
-						</li>
-						<li>
-							<a href="">Cohetes de agua</a>
-						</li>
-						<li>
-							<a href="">Concurso de arte</a>
-						</li>
-						<li>
-							<a href=""></a>
-						</li>
-						<li>
-							<a href=""></a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-			<ul class="header-right">
-				<li>
-					<a href="info.html">Info</a>
-				</li>
-				<li>
-					<a href="contact.html">Contacto</a>
-				</li>
-				<li>
-					<a href="account.html">Cuenta</a>
-				</li>
-			</ul>
-		</nav>
+			<nav class="navbar navbar-fixed-top navbar-default" style="width:100%;">
+					<div class="container" style="margin-left:0px; margin-right:0px; width:100%;">
+							<div class="navbar-header" >
+									<button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+									</button>
+									<a class="navbar-brand" href="./index.html" title="">
+											<img src="images/favicon/favicon-32x32.png" class="navbar-logo-img" alt="Logo" width="32" height="32">
+									</a>
+							</div>
+
+							<div class="collapse navbar-collapse" id="navbar-collapse-uarr" style="background-color: #fff;">
+									<ul class="nav navbar-nav navbar-left">
+											<li><a href="./education.html" title="">Educación</a></li>
+											<li><a href="./revista.html" title="">Revista</a></li>
+											<li><a href="./aeromodelling.html" title="">Aeromodelismo</a></li>
+											<li><a href="./rockets.html" title="">Rocket Team</a></li>
+											<li><a href="./cosmosat.html" title="">Cosmosat-1</a></li>
+											<li><a href="https://spacecon.etsit.urjc.es/" title="">SpaceCon</a></li>
+									</ul>
+									<ul class="nav navbar-nav navbar-right">
+											<li><a href="./info.html" title="">Info</a></li>
+											<li><a href="./contact.html" title="">Contacto</a></li>
+
+									</ul>
+							</div>
+					</div>
+			</nav>
 	</header>
 
 	<div class="section-container background-color-container white-text-container" style="background-color:#000000">
@@ -260,25 +235,32 @@ Con proyectos que van desde el aeromodelismo hasta la educación, pasando por la
 </div>
 
 <footer>
-	<div class="footer-left">
-		<img src="images/logoURJC.png">
-	</div>
-	<div class="footer-middle">
-		<img src="images/headings/rocket_vector_double.png">
-	</div>
-	<div class="footer-right">
-		<div id="follow-us-div">
-			<div id="follow-us">¡Síguenos en redes!</div>
-			<div>
-				<a href="https://twitter.com/cosmos_urjc" target="_blank">
-					<ion-icon name="logo-twitter"></ion-icon>
-				</a>
-				<a href="https://www.instagram.com/cosmos_urjc/" target="_blank">
-					<ion-icon name="logo-instagram"></ion-icon>
-				</a>
+	<div class="section-container footer-container">
+		<div class="container" style="width: 100%;">
+			<div class="row">
+				<div class="col-md-4 ">
+					<img src="images/logoURJC.png" width="50%">
+				</div>
+				<div class="col-md-4 ">
+					<img src="images/headings/rocket_vector_double.png" width="50%">
+				</div>
+				<div class="col-md-4 ">
+					<div id="follow-us-div">
+						<div id="follow-us">¡Síguenos en redes!</div>
+						<div>
+							<a href="https://twitter.com/cosmos_urjc" target="_blank">
+								<ion-icon name="logo-twitter"></ion-icon>
+							</a>
+							<a href="https://www.instagram.com/cosmos_urjc/" target="_blank">
+								<ion-icon name="logo-instagram"></ion-icon>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+
 </footer>
 <script type="text/javascript" src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
 <script type="text/javascript" src="./main.41beeca9.js"></script>
