@@ -1,200 +1,304 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112431571-5"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
 		gtag('js', new Date());
 
 		gtag('config', 'UA-112431571-5');
 	</script>
 
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta content="Página web de la Asociación Aeroespacial Cosmos" name="description">
 	<title>Cosmos</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'><!-- Font -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="icon" type="image" href="images/favicon.ico">
+	<link href="./main.a3f694c0.css" rel="stylesheet">
+</head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+
+<!-- stuff for favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+<link rel="manifest" href="images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 
 </head>
+
+
 <body>
 	<header>
-		<nav>
-			<ul class="header-left">
-				<li>
-					<a href="index.html" id="icon">
-						<img src="images/favicon.ico" id="active-icon-image" />
+		<nav class="navbar navbar-fixed-top navbar-default" style="width:100%;">
+			<div class="container" style="margin-left:0px; margin-right:0px; width:100%;">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="./index.html" title="">
+						<img src="images/favicon/favicon-32x32.png" class="navbar-logo-img" alt="Logo" width="32" height="32">
 					</a>
-				</li>
-				<li>
-					<a href="education.html">Educación</a>
-				</li>
-				<li>
-					<a href="rockets.html">Cohetes</a>
-				</li>
-				<li>
-					<a href="aeromodelling.html">Aeromodelismo</a>
-				</li>
-				<li>
-					<a href="research.html">Investigación</a>
-				</li>
-				<li>
-					<a href="culture.html">Cultura</a>
-				</li>
-				<li class="dropdown">
-					<a href="projects.html">Proyectos</a>
-					<ul class="dropdown-content">
-						<li>
-							<a href="">Ala volante</a>
-						</li>
-						<li>
-							<a href="">Cohetes de agua</a>
-						</li>
-						<li>
-							<a href="">Concurso de arte</a>
-						</li>
-						<li>
-							<a href=""></a>
-						</li>
-						<li>
-							<a href=""></a>
-						</li>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbar-collapse-uarr" style="background-color: #fff;">
+					<ul class="nav navbar-nav navbar-left">
+						<li><a href="./education.html" title="">Educación</a></li>
+						<li><a href="./revista.html" title="">Revista</a></li>
+						<li><a href="./aeromodelling.html" title="">Aeromodelismo</a></li>
+						<li><a href="./rockets.html" title="">Rocket Team</a></li>
+						<li><a href="./cosmosat.html" title="">Cosmosat-1</a></li>
+						<li><a href="https://spacecon.etsit.urjc.es/" title="">SpaceCon</a></li>
 					</ul>
-				</li>
-			</ul>
-			<ul class="header-right">
-				<li>
-					<a href="info.html">Info</a>
-				</li>
-				<li>
-					<a href="contact.html">Contacto</a>
-				</li>
-				<li>
-					<a href="account.html">Cuenta</a>
-				</li>
-			</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="./info.html" title="">Info</a></li>
+						<li><a href="./contact.html" title="">Contacto</a></li>
+
+					</ul>
+				</div>
+			</div>
 		</nav>
 	</header>
-	<div class="first-section dark-section">
-		<h1>COSMOS</h1>
-		<p>
-			COSMOS es una iniciativa de alumnos de ingeniería aeroespacial en la Universidad Rey Juan Carlos, y tiene como fin el apoyar y organizar proyectos e iniciativas aeroespaciales.
-		</p>
-		<p>
-			Buscando la divulgación científica celebra charlas, eventos, y talleres. También desarrolla proyectos de investigación y construcción de vehículos aeroespaciales, e intenta integrar un aprecio por la cultura y la astronomía dentro de la ingeniería.
-		</p>
-	</div>
-	<div id="index-image-section">
-		<div style="width: 50%; background: url('images/im1.webp') no-repeat center; background-size: cover;"></div>
-		<div style="width: 50%; background: url('images/im2.webp') no-repeat center; background-size: cover;"></div>
-	</div>
-	<div class="section">
-		<h1>Actualmente:</h1>
-		<div>
-			<ul>
-				<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfMWxspc3M9M1FJq4ry3bkga0-QmoXO29vkrQLEhsJgoCQ3Iw/viewform?usp=sf_link">Curso de LaTeX y Overleaf</a></li>
-				<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc_tEsRp3xXN89lgQkO1fhTYbXQeSFSErbsbxIpGaivYNwyJg/viewform?usp=sf_link">Ciclo de cine</a></li>
-				<li><a href="rockets.html">Cohetes de azúcar</a></li>
-				<li><a href="aeromodelling.html">Diseño "flying wing"</a></li>
-			</ul>
-		</div>
-		<div class="section">
-			<a href="https://forms.gle/Za1bT2UUzqCMUm4U7" target="_blank">
-				<img src="files/matlab_cosmos_course_2020.jpeg" width="25%" alt="matlab cosmos">
-			</a>
-		</div>
-	</div>
-	<div class="section">
-		<div>
-			<p>
-				Para participar en nuestras actívidades, sigue las actualizaciones por <a href="https://www.instagram.com/cosmos_urjc/">Instagram</a> o Twitter:
-			</p>
-		</div>
-		<!-- Twitter embedded -->
-		<div class="twitter">
-			<a class="twitter-timeline" data-width="40vw" data-height="60vh" data-theme="light" href="https://twitter.com/cosmos_urjc?ref_src=twsrc%5Etfw">Tweets by cosmos_urjc</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+	<div class="section-container background-color-container white-text-container" style="background-color:#000000">
+		<div class="section-container white-text-container background-image-container" style="background-image: url('.//images/bac/index.png')">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-0">
+						<br><br><br>
+						<div class="text-center">
+							<h1 style="color:white;font-size: 8vw;"><b>COSMOS</b></h1>
+						</div>
+					</div>
+					<div class="col-md-6 col-md-offset-0">
+						<div class="section-container-spacer">
+							<div class="text-justify">
+								<br><br>
+								<p style="color:white;font-family:'Montserrat';font-size:15px;">
+									COSMOS es una iniciativa de alumnos de la Universidad Rey Juan Carlos, y tenemos como fin el apoyar y organizar proyectos e iniciativas aeroespaciales.
+								</p>
+								<p style="color:white;font-family:'Montserrat';font-size:15px;">
+									Con proyectos que van desde el aeromodelismo hasta la educación, pasando por la construcción de un satélite y un cohete, buscamos acercarnos a la realidad aeroespacial e intentamos integrar un aprecio por la
+									cultura y la astronomía dentro de la ingeniería.
+								</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
-  <div class="section">
-		<ul>
-	    <li>
-	      <a href="magazine/202001.pdf" target="_blank">REVISTA COSMOS ENERO 2020</a>
-	    </li>
-	    <li>
-	      <a href="magazine/202002.pdf" target="_blank">REVISTA COSMOS FEBRERO 2020</a>
-	    </li>
-	    <li>
-	      <a href="magazine/202003.pdf" target="_blank">REVISTA COSMOS MARZO 2020</a>
-	    </li>
-	    <li>
-	      <a href="magazine/202004.pdf" target="_blank">REVISTA COSMOS ABRIL 2020</a>
-	    </li>
-	    <li>
-	      <a href="magazine/202005.pdf" target="_blank">REVISTA COSMOS MAYO 2020</a>
-	    </li>
-	    <li>
-	      <a href="magazine/202009.pdf" target="_blank">REVISTA COSMOS SEPTIEMBRE 2020</a>
-	    </li>
-	    <li>
-	      <a href="magazine/202010.pdf" target="_blank">REVISTA COSMOS OCTUBRE 2020</a>
-	    </li>
-	    <li>
-	      <a href="magazine/202011.pdf" target="_blank">REVISTA COSMOS NOVIEMBRE 2020</a>
-	    </li>
-	    <li>
-	      <a href="magazine/202101.pdf" target="_blank">REVISTA COSMOS ENERO 2021</a>
-	    </li>
-	    <li>
-	      <a href="magazine/202102.pdf" target="_blank">REVISTA COSMOS FEBRERO 2021</a>
-	    </li>
-	    <li>
-	      <a href="magazine/202103.pdf" target="_blank">REVISTA COSMOS MARZO 2021</a>
-	    </li>
-	    <li>
-	      <a href="magazine/202104.pdf" target="_blank">REVISTA COSMOS ABRIL 2021</a>
-	    </li>
-	  </ul>
-  </div>
-	<div class="section">
-		<div>
-			<a id="enroll-button" href="https://docs.google.com/forms/d/e/1FAIpQLSfXzTB64BxPZH1JsvJAMgx3bZwNBC5UngCPu6MTcT5tfQQX1A/viewform">Inscríbete</a>
-		</div>
-	</div>
-	<footer>
-		<div class="footer-left">
-			<ul style="display: inline-block; float: left;">
-				<li>
-					<a href="https://docs.google.com/document/d/1JCsOie2zNQspg8h-rVtuWD5g4GTfu7inIbeGcyhlrrk/edit?usp=sharing" target="_blank">Qué aprender</a>
-				</li>
-				<li>
-					<a href="entities.html">Entidades colaboradoras</a>
-				</li>
-			</ul>
-			<ul style="display: inline-block; float: right;">
-				<li><a href="cookies.html">Cookies</a></li>
-				<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXzTB64BxPZH1JsvJAMgx3bZwNBC5UngCPu6MTcT5tfQQX1A/viewform">Inscríbete</a></li>
-			</ul>
-		</div>
-		<div class="footer-middle">
-			<a href="index.html"></a>
-			<img src="images/logo.jpg">
-		</div>
-		<div class="footer-right">
-			<div id="follow-us-div">
-				<div id="follow-us">Síguenos</div>
-				<div>
-					<a href="https://twitter.com/cosmos_urjc" target="_blank">
-						<ion-icon name="logo-twitter"></ion-icon>
-					</a>
-					<a href="https://www.instagram.com/cosmos_urjc/" target="_blank">
-						<ion-icon name="logo-instagram"></ion-icon>
-					</a>
+
+	<div class="section-container border-section-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-1 section-container-spacer">
+					<div class="text-center">
+						<div class="fa-container">
+							<i class="fa fa-book fa-3x" aria-hidden="true" style="color:black"></i>
+							<br><br>
+						</div>
+						<h4><b> EDUCACIÓN </b></h4>
+					</div>
+					<div class="text-justify">
+						<p> Buscando acercar al publico al mundo aeroespacial, el equipo de Educación organiza charlas, talleres, cursos y clases, revistas y eventos, tanto de formación profesional como de cultura general.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-md-offset-2 section-container-spacer">
+					<div class="text-center	">
+						<div class="fa-container">
+							<i class="fa fa-wrench fa-3x" aria-hidden="true"></i>
+							<br><br>
+						</div>
+						<h4><b> CONSTRUCCIÓN </b></h4>
+					</div>
+					<div class="text-justify">
+						<p> Tenemos tres proyectos principales, de aeromodelismo, cohetería y un satélite. Partiendo desde lo aprendido en la carrera de ingeniería aeroespacial, y explorando todas las para llegar más lejos.
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div id="index-image-section">
+		<div style="width: 50%; background: url('images/index/contact2.jpg') no-repeat center; background-size: cover;"></div>
+		<div style="width: 50%; background: url('images/index/contact3.jpg') no-repeat center; background-size: cover;"></div>
+	</div>
+
+	<br>
+
+	<div class="section-container border-section-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-md-offset-0 section-container-spacer">
+					<div class="text-right">
+						<h3> <b> PRÓXIMAS ACTIVIDADES </b></h3>
+					</div>
+				</div>
+				<div class="col-md-3 col-md-offset-1 section-container-spacer">
+					<div class="text-center">
+						<div class="fa-container">
+							<a href="https://spacecon.etsit.urjc.es/" title="">
+								<i class="fa fa-laptop fa-3x" aria-hidden="true" style="color:black"></i>
+							</a>
+							<br><br>
+						</div>
+						<h4><b>
+								<a href="https://spacecon.etsit.urjc.es/" title="">
+									SpaceCon
+								</a>
+							</b></h4>
+					</div>
+					<div class="text-justify">
+						<p> Un congreso universitario para conocer a profesionales de varias ramas de la ciencia y la tecnología del espacio.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-md-offset-1 section-container-spacer">
+					<div class="text-center">
+						<div class="fa-container">
+							<a href="./cometas.html" title="">
+								<i class="fa fa-star fa-3x" aria-hidden="true" style="color:black"></i>
+							</a>
+							<br><br>
+						</div>
+						<h4><b>
+								<a href="./cometas.html" title="">
+									FuenCometas
+								</a>
+							</b></h4>
+					</div>
+					<div class="text-justify">
+						<p> Un concurso para diseñar, constrir y volar cometas en el campus de Fuenlabrada.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section-container background-color-container white-text-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="text-center">
+						<h1>Participar</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 section-container-spacer">
+					<div class="text-center">
+						<p> Para mantenerte al tanto de nuestras actividades, siempre puedes <a href="./contact.html"> seguirnos en redes </a>. Ahí publicamos la información más actualizada de todas las actividades que organizamos.
+						</p>
+						<p>Si quieres formar parte de Cosmos, puedes contactar con nosotros y estaríamos encantados de que te unas. <a href="./contact.html"> Escríbenos!</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="section-container border-section-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 section-container-spacer">
+					<div class="text-center">
+						<h4><b> La Asociación Aeroespacial Cosmos </b></h4>
+						<p> Fundada en 2018 por alumnos de ingeniería aeroespacial, Cosmos está afiliada a la Escuela Superior de Ingeniería de Telecomunicación (ETSIT) de la Universidad Rey Juan Carlos (URJC) en Madrid, España.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-3 col-xs-offset-2">
+					<div class="row">
+						<img class="img-responsive" src="./images/logo-gisat.png">
+					</div>
+					<div class="row">
+						<p style="text-align:center;"><b>Grupo de Investigación Consolidado en Sistemas Aeroespaciales y Transporte de la URJC (GISAT)</b></h4>
+					</div>
+				</div>
+				<div class="col-xs-3 col-xs-offset-2">
+					<div class="row">
+						<img class="img-responsive" src="./images/logo-etsit.png">
+					</div>
+					<div class="row">
+						<p style="text-align:center;"><b>Escuela Superior de Ingeniería de Telecomunicación de la URJC (ETSIT)</b></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="section-container footer-container">
+			<div class="container" style="width: 100%;">
+				<div class="row">
+					<div class="col-md-4 ">
+						<img src="images/logoURJC.png" width="50%">
+					</div>
+					<div class="col-md-4 ">
+						<img src="images/headings/rocket_vector_double.png" width="50%">
+					</div>
+					<div class="col-md-4 ">
+						<div id="follow-us-div">
+							<div id="follow-us">¡Síguenos en redes!</div>
+							<div>
+								<a href="https://twitter.com/cosmos_urjc" title="">
+									<i class="fa fa-twitter fa-1x " style="color:white; padding:7px" aria-hidden="true"></i>
+								</a>
+								<a href="https://www.instagram.com/cosmos_urjc/" title="">
+									<i class="fa fa-instagram fa-1x" style="color:white; padding:7px" aria-hidden="true"></i>
+								</a>
+								<a href="https://www.linkedin.com/company/cosmos-urjc" target="_blank">
+									<i class="fa fa-linkedin fa-1x" style="color:white; padding:7px" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</footer>
 	<script type="text/javascript" src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
+	<script type="text/javascript" src="./main.41beeca9.js"></script>
 </body>
+
 </html>
